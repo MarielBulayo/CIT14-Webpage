@@ -1,0 +1,482 @@
+/*header*/
+*{
+	margin: 0;
+	padding:0;
+}
+
+
+body{
+	height: 100vh;
+	width: 100%;
+	background-image: url(images/background.png);
+	background-size: cover;
+	background-position: center;
+	padding-left: 5%;
+	padding-right: 5%;
+	box-sizing: border-box;
+	position: relative;
+	background-repeat: no-repeat;
+}
+
+
+.main-nav{
+	list-style: none;
+	margin-right: 30px;
+	width: 100%;
+	height: 15vh;
+	margin: auto;
+	display: flex;
+	align-items: center;
+
+}
+
+.nav{
+	flex: 1;
+	padding-left: 60px;
+}
+.main-nav li{
+	display: inline-block;
+}
+
+.main-nav li a{
+	color:#FFA07A;
+	text-decoration: none;
+	padding: 10px 30px;
+	font-family: serif;
+	font-size: 20px;
+	display: inline-block;
+	list-style: none;
+	margin: 30px 20px;
+}
+
+.main-nav li.active a{
+color: #FC507C;
+}
+
+.main-nav li a:hover{
+color: #FC507C;
+}
+/*.main-nav li.active a{
+border: 2px solid white;
+}*/
+
+.main-nav li a:hover{
+border: 2px solid white;
+}
+
+.logo{
+
+	max-width: 15%;
+	cursor: pointer;
+}
+/*footer*/
+.footer{
+	padding-top: 2rem;
+}
+.categories{
+	margin: 70px 0;
+}
+.row1{
+	display: flex;
+	margin: 20px 0 20px;
+	margin-bottom: 20px;
+	justify-content: space-around;
+}
+
+.footer{
+	background: #B3FADE;
+	color: #black;
+	font-size: 15px;
+	padding: 10px;
+}
+
+.footer-col2 img{
+	width:200px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+}
+
+h4{
+	font-family: 'Fredoka One', cursive;
+	font-size: 20px;
+}
+
+
+.footer-col3 a {
+	text-decoration: none;
+	color:black;
+	font-size: 15px;
+	padding: 3px;
+	line-height: 0.5;
+}
+
+.footer-col2 p{
+	text-align: center;
+}
+.footer-col3 ul{
+	list-style-type: none;
+}
+
+.footer-col1 a {
+	text-decoration: none;
+	color:black;
+	font-size: 50px;
+	padding: 3px;
+	line-height: 0.5;
+		font-family: 'Lobster', cursive;
+}
+
+.footer-col1 ul{
+	list-style-type: none;
+}
+
+h3{
+	color: brown;
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+}
+
+
+/*Home*/
+.content h1{
+	font-size: 80px;
+	margin-bottom: 25px;
+	margin-left: 50px;
+	color: brown;
+	font-family: 'Lobster', cursive;
+}
+
+.content p{
+	font-size: 30px;
+	font-weight: 100;
+	margin-top: 24px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+	color: #232d60;
+	font-family: 'Anton', sans-serif;
+}
+
+.content{
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content .btn:hover{
+	  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background: linear-gradient(to top right, #ff33cc 26%, #3399ff 82%);
+
+}
+
+.content .btn{
+	display: inline-block;
+	margin-left: 50px;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15)
+}
+.feature-img{
+	height: 100%;
+	position: absolute;
+	bottom: 20px;
+	margin-left: 830px;
+}
+
+.social-links{
+ transform: rotate(-90deg);
+ position: absolute;
+ left: -80px;
+ bottom: 180px;
+ 
+}
+
+.social-links a{
+	text-decoration: none;
+	color:black;
+	padding-right: 20px;
+	font-size: 14px;
+}
+
+.social-links a:hover{
+color: #FC507C;
+}
+
+
+
+/*feature*/
+.row2{
+	display: flex;
+	margin: 100px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.small-categories{
+	max-width: 1080px;
+	margin:auto;
+	padding-left: 25px;
+	padding: 20px;
+}
+.col-3{
+	flex-basis: 30%;
+	padding:12px;
+	min-width: 100px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+
+.col-3 img{
+width: 100%;
+box-radius: 50px;
+}
+
+.col-3:hover{
+transform: translateY(-10px);
+}
+
+.title{
+	text-align: center;
+	margin:0 auto 10px;
+	position: relative;
+	line-height: 60px;
+	color: #555;
+	text-align: center;
+	font-family: 'Fredoka One', cursive;
+	font-size: 30px;
+
+	color: black;
+}
+
+.title::after{
+	content: '';
+	background: #ff523b;
+	width: 80px;
+	height: 5px;
+	border-radius: 5px;
+	position: absolute;
+	bottom: 0;
+	left: 45%;
+}
+
+hr { 
+  display: block;
+  margin-top: 7em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+} 
+
+
+
+h5{
+font-family: 'Heebo', sans-serif;
+	font-size: 20px;
+	text-align: center;
+			
+}
+
+/*about*/
+
+
+.about-section{
+	background-image: url(images/Cooking-Baking-Substitutes.jpg);
+	background-size: 55%;
+	background-color: #fdfdfd;
+	overflow:hidden;
+	padding:100px 0;
+}
+
+.inner-container{
+	width: 55%;
+	float: right;
+	background-color: #fdfdfd;
+	padding: 130px;
+}
+
+.inner-container h1{
+	margin-bottom: 30px;
+	font-size: 50px;
+	font-weight: 900;
+	font-family: 'Dancing Script', cursive;
+}
+
+.text{
+	font-size: 25px;
+	color: #545454;
+	line-height: 30px;
+	text-align: justify;
+	margin-bottom: 10px;
+}
+h6{
+	font-family: 'Lobster', cursive;
+	padding-left: 400px;
+	color: brown;
+	font-size: 20px;
+}
+
+
+
+/*products*/
+.row{
+	display: flex;
+	margin: 100px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.next {
+	flex-basis: 30%;
+	padding:12px;
+	min-width: 100px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+	cursor: pointer;
+	transition: transform 0.5s;
+}
+.next img{
+width: 100%;
+box-radius: 50px;
+}
+
+.next:hover{
+transform: translateY(-10px);
+}
+
+li{
+	list-style-type: none;
+}
+
+.next a{
+	color: purple;
+	font-family: 'Rockwell', cursive;
+	font-size: 18px;
+	 width: 50%;
+    background: #c8beb9;
+    padding: 1rem;
+    color: black;
+    cursor: pointer
+    font-family:Papyrus;
+	display: inline-block;
+	margin-left: 50px;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	border-radius: 6px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #fff;
+	box-shadow: 3px 8px 22px rgba(94,28,68,0.15)
+}
+
+.next a:hover{
+	background: linear-gradient(to top right, #ff33cc 26%, #3399ff 82%);
+	 box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.next p{
+	color: purple;
+	font-family: 'Lobster', cursive;
+	font-size: 30px;
+}
+
+.price{
+	color: red;
+	font-family: courier;
+	font-family: 20px;
+} 
+
+.body{
+	background-size: cover;
+	background-position: center;
+	padding-left: 0;
+	padding-right: 0;
+	background-image: url(images/background.png);
+}
+
+li.active a{
+border: 2px solid white;
+}
+
+#clear-cart{
+	font-family: 'Sofia';
+	font-size: 22px;
+	font-size: 30px;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	color: black;
+	border-radius: 10px;
+	width: 100%;
+	
+}
+button{
+	padding: 2px;
+	font-size: 25px;
+	float: right;
+	position: relative;
+	margin:4px;
+}
+#clear-cart:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background: linear-gradient(to top right, #ff33cc 26%, #3399ff 82%);
+}
+
+.font{
+	font-family: 'Annie Use Your Telescope';
+	font-size: 22px;
+	padding-top: 2rem;
+}
+
+.zefont{
+	font-size: 40px;
+	text-align: right;
+	display: block;
+	font-weight: bold;
+	padding-right: 10rem;
+}
+
+.add-to-cart{
+	font-family: 'Annie Use Your Telescope';
+	font-size: 22px;
+}
+
+
+input{
+	font-family: 'Annie Use Your Telescope';font-size: 22px;
+  width: 20%;
+  margin: 8px 0;
+  display:inline-flex;
+
+}
+
+
+
+#show-cart{
+	font-family: 'Annie Use Your Telescope';
+	font-size: 40px;
+
+}
+#check-out{
+	font-family: 'Sofia';
+	font-size: 22px;
+	font-size: 30px;
+	background: linear-gradient(45deg, #87adfe, #ff77cd);
+	color: black;
+	border-radius: 10px;
+	width: 100%;
+	text-decoration: none;
+}
+#check-out:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background: linear-gradient(to top right, #ff33cc 26%, #3399ff 82%);
+}
+
+
+
+
